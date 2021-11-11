@@ -361,6 +361,7 @@ header {
 /* Section erc721 */
 .erc_721 .container {
   padding-top: 85px;
+  padding-bottom: 60px;
 }
 .erc_721 .container h3 {
   font-family: "zombie";
@@ -393,6 +394,11 @@ header {
   padding: 12px;
 }
 /* the_story */
+.the_story {
+  position: relative;
+  margin-top: -350px;
+  z-index: 100;
+}
 .the_story .container {
   padding-top: 130px;
   padding-bottom: 60px;
@@ -571,6 +577,10 @@ right connector from last child*/
   height: 20px;
 }
 /* vaccine */
+.vaccine {
+  position: relative;
+  z-index: 200;
+}
 .vaccine .container {
   padding-top: 65px;
 }
@@ -836,4 +846,130 @@ swiper {
 
 .img_container img {
   width: 100%;
+}
+
+/* Scroll anim section */
+body {
+  margin: 0;
+}
+.top_section,
+.bottom_section,
+.content_section {
+  background-color: #000;
+}
+.top_div {
+  background-color: #181619;
+  border-radius: 6.25rem 6.25rem 0 0;
+  padding-bottom: 180px;
+}
+.top_div .main_heading {
+  padding-top: 60px;
+}
+.top_div p {
+  color: white;
+
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+.top_div .container {
+  text-align: left;
+}
+.height_div {
+  height: 200px;
+}
+.panda_div {
+  background-color: #000;
+  height: 1200px;
+  border-radius: 6.25rem 6.25rem 0 0;
+  margin-top: -90px;
+  position: relative;
+  z-index: 100;
+  padding-top: 100px;
+}
+.anim_container {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.anim_jacket {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.anim_eyes {
+  position: absolute;
+  left: -20px;
+}
+.anim_eyeband {
+  position: absolute;
+  left: 80px;
+}
+.anim_crown {
+  position: absolute;
+  left: 30px;
+}
+
+@media (max-width: 660px) {
+  /* the story */
+  .the_story {
+    position: relative;
+    margin-top: -730px;
+    z-index: 100;
+  }
+  /* anim container */
+  .anim_container {
+    width: 100vw;
+    text-align: center;
+  }
+  .top_div {
+    padding: 20px;
+  }
+  .anim_background {
+    width: 325px;
+  }
+
+  .anim_container img {
+  }
+
+  .anim_background {
+    width: 304.73px;
+    position: relative;
+    left: 35px;
+  }
+  .anim_jacket {
+    width: 274.26px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+  }
+  .anim_eyes {
+    width: 326.06px;
+    position: absolute;
+    left: 27px;
+    top: 0px;
+  }
+  .anim_eyeband {
+    width: 224.99px;
+    position: absolute;
+    left: 75px;
+  }
+  .anim_crown {
+    width: 274.26px;
+    position: absolute;
+    left: 52px;
+    top: 0px;
+  }
+  .logo_anim_div {
+    width: 90%;
+  }
+  .top_div .main_heading {
+    padding-top: 0px;
+  }
+  .top_div .container .h3_heading {
+    padding-top: 10px;
+  }
 }
